@@ -1,0 +1,89 @@
+* {
+    font-family: oswald;
+}
+
+body{
+    background-color: #F2F2F2;
+    color:#F25C93
+}
+
+.intro{
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.intro_nom{
+    text-align: center;
+    font-size: 200px;
+   
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+}
+
+nav li{
+    list-style-type: none;
+    font-size:50px;
+    padding: 30px ;
+    font-family: Oswald;
+}
+
+nav li a{
+    text-decoration: none;
+    color:#F25C93;
+
+}
+
+.text_pizza{
+    
+    font-size: 30px;
+    text-align: center;
+    margin: 50px;
+
+}
+.container{
+  display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   background-color: #010A26;
+   color: #F25C93;
+   
+}
+
+
+.carte{
+    display:flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.carte_body{
+
+}
+
+.carte_titre{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.carte_texte{
+    margin-bottom: 70px;
+    text-align: justify;
+    font-size: 20px;
+
+}
+
+.carte_img_top{
+    width:30px;
+
+}
+
+.carte_prix{
+    text-align: center;
+    font-size: 30px;
+
+}
+
