@@ -69,6 +69,14 @@ body{
   text-align: center;
 }
 
+.text-devant-4 {
+  color:white;
+  font-size: 20px;
+  font-family: 'Abel', sans-serif;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
 .dicton {
   font-weight: 800;
   letter-spacing: 0em;
@@ -117,10 +125,18 @@ body{
   .text-devant-2{
     margin: 10px;
   }
-
 }
 
 .btn-pizzas-2 {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color: black;
+  border-color: #FBEEDA;
+  background-color: #FBEEDA;
+  margin-bottom: 20px;
+}
+
+.btn-pizzas-3 {
   font-family: 'Abel', sans-serif;
   font-size: 30px;
   color: black;
@@ -161,9 +177,9 @@ footer a:hover {
     border-radius: 50%;
     background-color: white;
     text-align: center;
-    line-height: 50px;
-    margin: 5px;
-    background-color: #FBEEDA /* Espace entre les icônes */
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
 }
 
 .fab {
@@ -234,4 +250,26 @@ a {
 .section-button:active,
 .section-button:focus { /* Vous pouvez ajouter :focus si nécessaire */
   color: black; /* Couleur du texte lorsque le bouton est activé */
+}
+
+/* Aligner les boutons téléphone et Click and Collect sur la même ligne */
+.text-align-center {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+  .btn-pizzas-3 {
+    font-size: 20px !important;
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+  }
+  .btn-pizzas-2 {
+    font-size: 20px !important;
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+  }
 }
