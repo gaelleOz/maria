@@ -6,11 +6,6 @@
       <loc>https://www.maria.pizza/</loc>
    </url>
 
-   <!-- Page d'accueil -->
-   <url>
-      <loc>https://www.maria.pizza/index.html</loc>
-   </url>
-
    <!-- Page Menu -->
    <url>
       <loc>https://www.maria.pizza/menu.html</loc>
@@ -22,9 +17,11 @@
    </url>
 
    <!-- Page Panozzos -->
+   <!-- masquée pour le moment
    <url>
       <loc>https://www.maria.pizza/panozzos.html</loc>
    </url>
+   -->
 
    <!-- Page Valeurs -->
    <url>

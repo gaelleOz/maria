@@ -83,7 +83,7 @@ body{
   text-transform: uppercase;
   line-height: 1.25;
   padding: 0px;
-  font-size: 90px;
+  font-size: clamp(40px, 5vw, 90px); /* s'adapte à la largeur de l'écran */
   text-align: center;
   color:white;
   font-family: "Nixie one";
@@ -96,7 +96,7 @@ body{
   text-transform: uppercase;
   line-height: 1.25;
   padding: 0px;
-  font-size: 280px;
+  font-size: clamp(50px, 17vw, 280px); /* s'adapte à la largeur de l'écran */
   text-align: center;
   color: black;
   margin-top: 100px;
@@ -112,7 +112,7 @@ body{
     margin-top: 20px !important;
   }
   .container-pizza{
-    margin-top: 400px !important;
+    margin-top: 2rem !important;
     padding: 20px !important;
   }
   .text-resa{
@@ -120,7 +120,8 @@ body{
   }
   .food{
     margin-top: 0 !important;
-    justify-content: space-around !important;
+    justify-content: center !important;
+    padding: 2rem 0 !important;
   }
   .text-devant-2{
     margin: 10px;
@@ -145,8 +146,49 @@ body{
   margin-bottom: 10px;
 }
 
+/* Bloc vert "Rejoins nous" : 3 options (sur place / à emporter / livraison) */
+.option-resa {
+  text-align: center;
+  color: white;
+  font-family: 'Abel', sans-serif;
+  width: 85%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 1.25rem 0;
+  border-top: 1px solid rgba(251, 238, 218, 0.35);
+}
+
+.option-titre {
+  font-size: 30px;
+  margin-bottom: 0.25rem;
+}
+
+.option-titre i {
+  font-size: 22px;
+  margin-right: 0.4rem;
+}
+
+.option-texte {
+  font-size: 18px;
+  margin-bottom: 0.75rem;
+}
+
+.option-resa .btn {
+  margin: 0.25rem;
+}
+
+@media (max-width: 1284px) {
+  .option-titre {
+    font-size: 24px;
+  }
+  .option-texte {
+    font-size: 16px;
+  }
+}
+
 .food {
   height: 100%; /* La hauteur de la div est définie à 100% */
+  padding: 2rem 0;
   background-color: #5B613A; /* Vous pouvez ajuster la marge intérieure selon vos préférences */
   display: flex; /* Utilisation de flexbox pour aligner verticalement le contenu */
   flex-direction: column; /* Aligner le contenu en colonne */
@@ -177,9 +219,9 @@ footer a:hover {
     border-radius: 50%;
     background-color: white;
     text-align: center;
-    font-size: 16px !important;
-    padding: 10px 20px !important;
-    border-radius: 5px !important;
+    line-height: 50px;
+    margin: 5px;
+    background-color: #FBEEDA /* Espace entre les icônes */
 }
 
 .fab {
@@ -192,7 +234,7 @@ footer {
   font-size: 18px;
   margin: 0 auto;
   padding: 40px;
-  margin-top: 30px;
+  margin-top: 0; /* collé au bloc vert au-dessus */
   border-top: 0.5px solid #f7d298;
   font-family: 'Abel', sans-serif;
 }
@@ -272,4 +314,26 @@ a {
     padding: 6px 12px !important;
     border-radius: 4px !important;
   }
+}
+
+@media (max-width: 767px) {
+  .food {
+    height: auto !important; /* sur mobile, le bloc vert prend juste la hauteur de son contenu */
+  }
+}
+
+/* Sur ordinateur, la photo prend toute la hauteur du bloc vert à côté */
+@media (min-width: 768px) {
+  .img-equal-size {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Horaires du bas de page : les jours ont tous la même largeur, donc les horaires (et "Fermé") sont alignés */
+footer .day {
+  display: inline-block;
+  min-width: 2.6em;
+  margin-right: 0.4em;
 }

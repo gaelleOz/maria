@@ -194,3 +194,10 @@ a {
 .section-button:focus { /* Vous pouvez ajouter :focus si nécessaire */
   color: black; /* Couleur du texte lorsque le bouton est activé */
 }
+
+/* Horaires du bas de page : les jours ont tous la même largeur, donc les horaires (et "Fermé") sont alignés */
+footer .day {
+  display: inline-block;
+  min-width: 2.6em;
+  margin-right: 0.4em;
+}

@@ -1,0 +1,5 @@
+# Fichiers du Mac
+.DS_Store
+
+# Réglages de l'éditeur (VS Code)
+.vscode/

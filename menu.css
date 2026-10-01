@@ -270,7 +270,7 @@ h6 {
   }
 }
 
-.product-card h4, h5 {
+.product-card h4, h5, .h5 {
   margin-top: 0;
   font-family: 'Abel', sans-serif;
 }
@@ -413,4 +413,22 @@ li {
 
 ul {
   padding-left: 0;
+}
+
+/* Horaires du bas de page : les jours ont tous la même largeur, donc les horaires (et "Fermé") sont alignés */
+footer .day {
+  display: inline-block;
+  min-width: 2.6em;
+  margin-right: 0.4em;
+}
+
+/* Sur ordinateur, la colonne de texte prend toute la largeur : les prix sont alignés à droite dans toutes les rubriques */
+@media (min-width: 769px) {
+  .product-card > .d-flex.flex-column {
+    flex: 1;
+  }
+  .product-card .justify-content-between h4:last-child {
+    white-space: nowrap;
+    margin-left: 1rem;
+  }
 }

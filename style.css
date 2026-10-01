@@ -579,3 +579,60 @@ a:hover {
 .section-button:focus { /* Vous pouvez ajouter :focus si nécessaire */
   color: black; /* Couleur du texte lorsque le bouton est activé */
 }
+
+/* ===== Réglages mobile de la page d'accueil : blocs plus compacts ===== */
+@media (max-width: 767px) {
+  /* Haut de page */
+  .maria {
+    font-size: 64px !important;
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+  }
+  .lead {
+    font-size: 34px !important;
+    margin-bottom: 1rem;
+  }
+  .custom-container .btn-outline-dark {
+    font-size: 20px;
+  }
+  .image-element {
+    max-height: 360px;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  /* Blocs verts "Manger boire savourer" / "Voyager apprendre partager" */
+  .bienvenue {
+    font-size: 40px !important;
+    margin: 1.5rem 0 1rem !important;
+  }
+  .food {
+    padding: 24px 16px;
+  }
+  .dicton {
+    font-size: 28px !important;
+    margin-bottom: 0.25rem;
+  }
+  .text-devant-2,
+  .text-devant-3 {
+    font-size: 18px !important;
+    margin-bottom: 0.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .btn-pizzas-2 {
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+  .row .img-equal-size {
+    height: 240px;
+  }
+}
+
+/* Horaires du bas de page : les jours ont tous la même largeur, donc les horaires (et "Fermé") sont alignés */
+footer .day {
+  display: inline-block;
+  min-width: 2.6em;
+  margin-right: 0.4em;
+}

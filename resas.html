@@ -25,9 +25,21 @@
   <script src="https://kit.fontawesome.com/270f96d986.js" crossorigin="anonymous"></script>
   <meta name="description" content="Pensez à réserver dans notre pizzeria napolitaine à Lyon, sur place ou à emporter">
   <meta name="keywords" content="pizza, croix-rousse, restaurant, napolitaine, italien, lyon, réservations">
-  <title>Réservations</title>
+  <title>Réserver – Maria. Pizzeria napolitaine Lyon Croix-Rousse</title>
+  <!-- Aperçu des liens partagés (WhatsApp, Instagram, Facebook...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Maria.">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Réserver – Maria. Pizzeria napolitaine Lyon Croix-Rousse">
+  <meta property="og:description" content="Pensez à réserver dans notre pizzeria napolitaine à Lyon, sur place ou à emporter">
+  <meta property="og:url" content="https://www.maria.pizza/resas.html">
+  <meta property="og:image" content="https://www.maria.pizza/resources/partage.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 
+<body>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light">
     <a href="index.html">
@@ -51,9 +63,11 @@
         <li class="nav-item">
           <a class="nav-link text-dark" href="pizzas.html">Nos pizzas</a>
         </li>
+        <!-- Onglet panozzos masqué (pas de panozzos en ce moment) — retirer ce commentaire pour le réafficher
         <li class="nav-item">
           <a class="nav-link text-dark" href="panozzos.html">Nos panozzos</a>
         </li>
+        -->
         <li class="nav-item">
           <a class="nav-link text-dark" href="valeurs.html">Nos valeurs</a>
         </li>
@@ -67,57 +81,39 @@
       <h1 class="bienvenue text-center hidden m-0">BENVENUTO !</h1>
     <div class="row d-flex p-0">
       <div class="col-md-6 col-sm-12 align-items-stretch ps-0 pe-0">
-        <img src="resources/IMG_7924.jpg" alt="Image" class="img-fluid img-equal-size">
+        <img src="resources/IMG_7924.jpg" alt="Salle du restaurant Maria." class="img-fluid img-equal-size">
       </div>
       <div class="col-md-6 col-sm-12 food ps-0 pe-0 d-flex flex-column justify-content-center">
         <p class="dicton">REJOINS NOUS!</p>
-        <p class="text-devant-2 hidden">
-          Viens manger sur place ou à emporter.
-        </p>
-        <p class="text-devant-3 hidden">
-          Sur place | Via Internet
-        </p>
-        <div class="btn-container mt-3 text-center">
+        <p class="text-devant-2">3 façons de profiter de nos pizzas</p>
+
+        <!-- 1. Sur place -->
+        <div class="option-resa">
+          <p class="option-titre"><i class="fas fa-utensils"></i> Sur place</p>
+          <p class="option-texte">Réserve ta table en ligne</p>
           <a href="https://widget.guestplan.com/?i=92e2f0b61aa55a26d1b8204be4ae5b2f5feda90f" target="_blank"
             class="btn btn-outline-dark btn-pizzas-2">Réserver</a>
         </div>
-        <p class="text-devant-3 hidden">
-          A emporter | Par téléphone ou Click and Collect<p class="text-devant-4 hidden">Avec le Click and Collect: Payez en ligne pour ne pas attendre !</p>
-        </p>
-        <div class="text-align-center justify-content-center">
-        <div class="btn-container ms-2 text-center">
-          <a href="tel:06 64 87 90 85" class="btn btn-outline-dark btn-pizzas-2">0664879085</a>
+
+        <!-- 2. À emporter -->
+        <div class="option-resa">
+          <p class="option-titre"><i class="fas fa-shopping-bag"></i> À emporter</p>
+          <p class="option-texte">Commande par téléphone, ou en Click &amp; Collect pour payer en ligne et ne pas attendre</p>
+          <a href="tel:+33664879085" class="btn btn-outline-dark btn-pizzas-2">06 64 87 90 85</a>
+          <a href="https://menu.lyoneats.fr/menu/items/maria" target="_blank"
+            class="btn btn-outline-dark btn-pizzas-3">Click &amp; Collect</a>
         </div>
-         <div class="btn-container ms-2 text-center">
-          <a href="https://menu.lyoneats.fr/menu/items/maria" class="btn btn-outline-dark btn-pizzas-3">Click & Collect</a>
-        </div>
+
+        <!-- 3. Livraison -->
+        <div class="option-resa">
+          <p class="option-titre"><i class="fas fa-motorcycle"></i> En livraison</p>
+          <p class="option-texte">Fais-toi livrer chez toi avec Lyon Eats</p>
+          <a href="https://menu.lyoneats.fr/menu/items/maria" target="_blank"
+            class="btn btn-outline-dark btn-pizzas-3">Me faire livrer</a>
         </div>
       </div>
     </div>
   </div>
-
-
-
-
-    <section>
-      <div class="container-pizza">
-        <div class="text-resa">
-          <p class="text-center">Tu ne rêves pas ! Tu peux dès à présent planifier ta soirée PIZZAS ...</p>
-          <br>
-          <p class="text-center">D'un seul clic, tu peux réserver ta table chez MARIA. !!!</p>
-          <br>
-          <p class="text-center">
-            Mais... On compte sur toi... Si tu réserves... Tu viens !!!
-            (Même s'il pleut et que t'as la flemme ...)
-            ou alors au moins tu annules ta réservation sur le lien qui te sera envoyé par mail lors de ta confirmation!
-          </p>
-          <div class="button-book">
-            <a href="https://widget.guestplan.com/?i=92e2f0b61aa55a26d1b8204be4ae5b2f5feda90f" target="_blank"
-              class="link">Réserve ta table</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <footer>
       <div class="container mt-5">
@@ -131,7 +127,7 @@
           <div class="col-md-4 d-flex justify-content-center">
             <ul class="list-unstyled text-center text-md-start">
               <li class="pb-2 contact text-center">Nous contacter:</li>
-              <div>
+              <li>
                 <ul class="list-unstyled text-center text-md-start">
                   <li><a href="mailto:maria.restaurantlyon@gmail.com">maria.restaurantlyon@gmail.com</a></li>
                   <li class="text-center"><a class="nav-link text-dark" href="tel:06 64 87 90 85">0664879085</a></li>
@@ -146,37 +142,31 @@
                       aria-label="Profil Facebook Maria"><i class="fab fa-facebook-f" style="color: black"></i></a>
                   </div>
                 </div>
-              </div>
+              </li>
             </ul>
           </div>
           <div class="col-md-4 d-flex flex-column justify-content-center align-items-center align-md-start">
             <p class="pb-2">Horaires d'ouverture:</p>
             <div class="d-flex flex-column gap-2">
-              <div class="d-flex justify-content-between">
+              <div class="d-flex">
                 <span class="day">Lun:</span>
                 <div>12h-14h / 19h-22h</div>
               </div>
-              <div class="d-flex justify-content-between">
-                <span class="day">Mar:</span>
-                <div>Fermé</div>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span class="day">Mer:</span>
-                <div>Fermé</div>
-              </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-flex"><span class="day">Mar:</span><div>Fermé</div></div>
+              <div class="d-flex"><span class="day">Mer:</span><div>Fermé</div></div>
+              <div class="d-flex">
                 <span class="day">Jeu:</span>
                 <div>12h-14h / 19h-22h</div>
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-flex">
                 <span class="day">Ven:</span>
                 <div>12h-14h / 19h-22h</div>
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-flex">
                 <span class="day">Sam:</span>
                 <div>12h-14h / 19h-22h</div>
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-flex">
                 <span class="day">Dim:</span>
                 <div>12h-14h / 19h-22h</div>
               </div>
@@ -213,6 +203,7 @@
         });
       });
     </script>
+    </div>
     </body>
 
 </html>

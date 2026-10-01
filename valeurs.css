@@ -213,6 +213,7 @@ hr {
   }
   .pate {
     max-width: 100%; /* Réduire la largeur de l'image pour les écrans mobiles */
+    height: 60vh; /* photos moins hautes sur mobile */
   }
   div{
     max-width: 100% !important;
@@ -242,4 +243,24 @@ a {
 .section-button:active,
 .section-button:focus { /* Vous pouvez ajouter :focus si nécessaire */
   color: black; /* Couleur du texte lorsque le bouton est activé */
+}
+
+/* Horaires du bas de page : les jours ont tous la même largeur, donc les horaires (et "Fermé") sont alignés */
+footer .day {
+  display: inline-block;
+  min-width: 2.6em;
+  margin-right: 0.4em;
+}
+
+/* Photos rondes "Les racines" : taille adaptée à l'écran pour ne jamais être coupées sur mobile */
+@media (max-width: 767px) {
+  .container-photo-info {
+    height: auto;
+    overflow: visible;
+  }
+  .container-photo-info img {
+    width: min(300px, 75vw);
+    height: min(300px, 75vw);
+    flex-shrink: 0;
+  }
 }
